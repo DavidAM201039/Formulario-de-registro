@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" >
+            <title>Formulario de registro</title>
+    </head>
+    <body> 
+        <form action="programa.php" method ="get">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" size="50"><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" size="50"><br>
+            <label>Contraseña:</label><br>
+            <input TYPE="password" name="password" type="text" id="Contraseña"/><br>
+            <label>Sexo: </label>
+            <input type="radio" id="html" name="genero" value="Hombre">
+            <label for="html">Hombre</label>
+            <input type="radio" id="css" name="genero" value="Mujer">
+            <label for="css">Mujer</label><br><br>
+            <input type="submit" value="Enviar"><br>
+            <label for="email">Introduce tu email:</label>
+            <input type="email" id="email"><br>
+            <select name="Provincia">
+            <option selected value="0"> Seleccione su provincia </option>
+                <optgroup label="Castilla y León"> 
+                    <option value="1">León</option> 
+                    <option value="2">Zamora</option> 
+                    <option value="3">Salamanca</option> 
+                    <option value="4">Palencia</option> 
+                    <option value="5">Valladolid</option> 
+                    <option value="6">Burgos</option> 
+                    <option value="7">Avila</option> 
+                    <option value="8">Soria</option> 
+                    <option value="9">Segovia</option> 
+                </optgroup> 
+            <optgroup label="Galicia"> 
+                <option value="10">La coruña</option> 
+                <option value="11">Lugo</option> 
+                <option value="12">Orense</option> 
+                <option value="13">Pontevedra</option> 
+            </optgroup> 
+            <optgroup label="Extremadura"> 
+                <option value="14">Badajoz</option> 
+                <option value="15">Cáceres</option> 
+            </optgroup> 
+            </select><br>
+            <p>comentario: <textarea name="texto"></textarea></p>
+            <input type="checkbox" id="info" name="información" value="información" checked="checked">
+            <label for="info"> Deseo recibir información sobre novedades y ofertas</label><br>
+            <input type="checkbox" id="datos" name="DATOS" value="DATOS">
+            <label for="datos"> Declaro haber leido y aceptar las condiciones generales
+                del programa y la normativa sobre protección de datos</label><br>
+            <input type="submit" value="Submit">
+          </form>
+    </body>
+</html>
